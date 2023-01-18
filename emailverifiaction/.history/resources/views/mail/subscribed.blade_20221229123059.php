@@ -1,4 +1,0 @@
-Email Verify
-Name : 
-Email:
-
