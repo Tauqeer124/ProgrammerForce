@@ -25,5 +25,3 @@ Route::get('/loginuser',[ApiController1::class,'login'])->name('login');
 Route::post('/logout',[ApiController1::class,'logout'])->middleware('auth:api');     
 Route::get('/sendnewemail/{email}',[ApiController1::class,'sendverifyemail']);
 Route::post('/registernewuser',[ApiController1::class,'register_user']); 
-
-Route::middleware('auth:api')->get('/details',[ApiController1::class,'getTaskList']);
